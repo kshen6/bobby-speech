@@ -19,10 +19,10 @@ const app = new App(config);
 
 app.setHandler({
     'LAUNCH': function() {
-        this.toIntent('HelloWorldIntent');
+        this.toIntent('exerciseDemoIntent');
     },
 
-    'HelloWorldIntent': function() {
+    'exerciseDemoIntent': function() {
         this.ask('Hello World! What\'s your name?', 'Please tell me your name.');
     },
 
